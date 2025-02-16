@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package-Detail</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes rgbGlow {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: yellow; }
+            100% { color: red; }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            animation: rgbGlow 3s infinite linear;
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .room {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .room:hover {
+            transform: translateY(-5px);
+        }
+
+        .room img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .room h2 {
+            margin: 15px 0 10px;
+            color: #222;
+        }
+
+        .room p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .book-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .book-btn:hover {
+            background: darkorange;
+        }
+        img{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;  
+        }
+    
+    </style>
+</head>
+<body>
+    <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/08/Mountains-and-beach-BLOG-header.png" alt="">
+    <div class="container">
+        <h1>Explore Our Packages</h1>
+        <div class="rooms">
+            <div class="room">
+                <img src="bagha.jpg" alt="Goa beach">
+                <h2>Bagha Beach</h2>
+                <p>₹5000 per night</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="room">
+                <img src="nagva.jpg" alt="Diu Beach">
+                <h2>Nagva Beach</h2>
+                <p>₹3500 per night</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="room">
+                <img src="juhu.jpg" alt="Mumbai Beach">
+                <h2>Juhu Beach</h2>
+                <p>₹2000 per night</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="room">
+                <img src="kedarnath.jpg" alt="Kedarnath">
+                <h2>Kedarnath</h2>
+                <p>₹20000 Per Person</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="room">
+                <img src="lonavala.jpg" alt="Lonavala">
+                <h2>Lonavala</h2>
+                <p>₹10000 Per Person</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+            <div class="room">
+                <img src="manali.jpg" alt="Manali">
+                <h2>Manali</h2>
+                <p>₹15000 per Person</p>
+                <a href="booking.html" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
